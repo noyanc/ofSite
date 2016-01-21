@@ -241,3 +241,19 @@ FAQ
 - The device must have an SD card if you use resources in your openFrameworks app. Note that some devices have an internal SD card, like the Galaxy Tab 10.1.
 - Make sure you've declared the appropriate permissions in AndroidManifest.xml (for instance, android.permission.CAMERA for cameras and android.permission.WRITE_EXTERNAL to interact with the SD card, which is necessary if you have resources.)
 - Was bin/data accidentally erased by something or other? Does res/raw/your_project_name_resources.zip exist, and does it contain your resources?
+
+** If you get the error message: "Make: ***This package doesn’t support your platform, probably you downloaded the wrong package?"
+
+1. Open the C++ perspective: Window -> Open Perspective -> Other... -> C/C++
+2. Select openFrameworks in the Project Explorer
+3. Drop down the hammer button
+4. Select Android
+
+** If you get the error message: "Project 'androidEmptyExample' is missing required source folder: 'gen'"
+
+1. Select androidEmptyExample in the Project Explorer
+2. Go to Menu -> Project -> Properties -> Android
+3. Select Android-19 in the right-side list
+4. Click OK
+5. Clean & Build the project, the error will be disappeared
+6. You can revert back to Android-21 and Clean&Build again. You will have no more error.
